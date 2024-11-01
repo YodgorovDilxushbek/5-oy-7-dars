@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro'yxatdan O'tish</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .form__container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+
+      .form__container h2 {
+        margin-bottom: 20px;
+      }
+
+      .form__container input[type="text"],
+      .form__container input[type="email"],
+      .form__container input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #28a745;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .form__container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .form__container input[type="submit"]:hover {
+        background-color: #218838;
+      }
+
+      .cards {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        border: 2px dotted aqua;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card .image {
+        margin-top: 10px;
+      }
+
+      .card .image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .title h2 {
+        color: rgb(29, 29, 28);
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form__container">
+      <h2>Ro'yxatdan O'tish</h2>
+      <form id="registrationForm">
+        <input
+          type="text"
+          name="ism"
+          placeholder="Ismingizni kiriting....."
+          required
+        />
+        <input
+          type="text"
+          name="familiya"
+          placeholder="Familiyangizni kiriting......"
+          required
+        />
+        <input
+          type="tel"
+          name="telefon"
+          placeholder="Nomeringizni kiriting...."
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Emailingizni kiriting...."
+          required
+        />
+        <input
+          type="text"
+          name="rasm_url"
+          placeholder="Rasm URL manzilini kirting..."
+          required
+        />
+        <input type="submit" value="Ro'yxatdan o'tish" />
+      </form>
+    </div>
+
+    <div class="cards" id="cardContainer">
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+
